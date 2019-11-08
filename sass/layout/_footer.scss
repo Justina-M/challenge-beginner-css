@@ -1,0 +1,179 @@
+.footer {
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    &__row {
+        //background-color: yellow;
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    &__column {
+        float: left;
+        width: 50%;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        &--text-box {
+            padding: 10rem 3rem 13rem 17rem;
+
+            @include respond(phone) {
+                padding: 12rem 3.5rem 0 4rem;
+            }
+        }
+    }
+
+    &__right-row {
+        padding-top: 19rem;
+        padding-left: 8rem;
+
+        @include respond(phone) {
+            padding-top: 12rem;
+            padding-left: 3.5rem;
+        }
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    &__right-column {
+        float: left;
+        width: 33.33%;
+
+        @include respond(phone) {
+            width: 100%;
+            padding-bottom: 8rem;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        line-height: 3rem;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+
+    &__contacts {
+        display: inline-block;
+        color: $color-neutral-light;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__attribution {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+/* .footer {
+    width: 100%;
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    &__flex-container {
+        display: flex;
+        flex-direction: row;
+
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        @include respond(phone) {
+            flex-direction: column;
+        }
+
+        &--left {
+            width: 62%;
+            padding: 10rem 13rem 13rem 17rem;
+
+            @include respond(phone) {
+                width: 100%;
+                padding: 3rem;
+            }
+        }
+
+        &--right {
+            width: 38%;
+            position: relative;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        line-height: 3rem;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+    }
+
+    &__contacts {
+        display: inline-block;
+        color: $color-neutral-light;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include clearfix;
+
+        @include respond(phone) {
+            flex-direction: column;
+            top: 0;
+            transform: none;
+        }
+
+        &-column {
+            width: 33.33%;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__attribution {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.3rem;
+        padding-bottom: 3rem;
+    }
+    
+} */

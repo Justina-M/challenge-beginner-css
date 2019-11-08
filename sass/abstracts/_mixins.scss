@@ -1,0 +1,30 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+/*
+MEDIA QUERY MANAGER
+0 - 600px : Phone
+600 - 1065px : Tablet
+1065px + : Desktop - normal style
+
+convert px to em : 1em = 16px
+
+Breakpoint argument choices:
+- phone
+- tab
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {@content}; // 600px / 16px
+    }
+
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 66.6em) {@content}; // 1065px / 16px
+    }
+}

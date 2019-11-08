@@ -1,0 +1,97 @@
+html {
+    // This defines what 1 rem is
+    font-size: 62.5%;  // 1rem = 10px. We put it in % - 10px/16px=62.5%
+
+    @include respond(phone) {
+        font-size: 53.13%;  // 1rem = 8.5px
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $color-neutral-medium;
+    font-size: 1.6rem;
+}
+p {
+    line-height: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.heading-h1 {
+    color: $color-neutral-dark;
+    font-size: 4.8rem; 
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
+}
+
+.heading-h2 {
+    color: $color-primary-dark;
+    font-size: 3.3rem;
+    line-height: 5rem;
+
+    @include respond(phone) {
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+    }
+}
+
+.heading-h3 {
+    color: $color-primary-dark;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.features__text {
+   color: $color-neutral-dark;
+   font-size: 2.5rem;
+   font-weight: 600;
+   line-height: 4rem;
+   margin-top: 2.5rem;
+
+   @include respond(phone) {
+       font-size: 1.9rem;
+   }
+}
+
+.nav--heading {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: $color-white;
+    margin-bottom: 3rem;
+
+    &:hover,
+    &:active {
+        color: $color-accent;
+    }
+}
+
+.nav--link {
+    display: block;
+    text-decoration: none;
+    color: $color-neutral-light;
+    margin-bottom: 1.7rem;
+
+    &:hover,
+    &:active {
+        color: $color-accent;
+    }
+}
+
+.nav--attribution {
+    text-decoration: none;
+    color: $color-accent;
+
+    &:hover,
+    &:active {
+        color: $color-white;
+    }
+}

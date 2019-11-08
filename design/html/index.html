@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design</title>
+
+    <style>
+        .background {
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            height: 100vh;
+        }
+        .img {
+            margin: 0 auto;
+        }
+        .desktop {
+            display: block;
+            width: 100%;
+        }
+        .mobile {
+            display: none;
+            width: 375px;
+        }
+        @media screen and (max-width: 375px) {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+                width: 375px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <img src="../desktop-design.jpg" alt="" class="img desktop">
+        <img src="../mobile-design.jpg" alt="" class="img mobile">
+    </div>
+    
+</body>
+</html>
