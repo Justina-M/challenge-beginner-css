@@ -1,4 +1,9 @@
-# Frontend Mentor - Landing page with detailed integrations section
+# Frontend Challenge - Landing page with detailed integrations section
+
+A challenge for beginner css skills to code a single page site according to the given designs. Below are the instructions and here is my result: https://justina-m.github.io/challenge-beginner-css/
+Technologies and tools I used: HTML, SASS, npm
+
+-------------
 
 ![Header/intro section for the Landing page with detailed integrations section](./design/desktop-preview.jpg)
 
